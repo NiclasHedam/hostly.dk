@@ -1,0 +1,14 @@
+@font-face {
+  font-family: poiret-one;
+  src: url(../fonts/poiretone.ttf);
+}
+
+.poiret{
+    font-family: poiret-one;
+}
+
+.e-mail:before {
+    content: attr(data-website) "\0040" attr(data-user);
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
